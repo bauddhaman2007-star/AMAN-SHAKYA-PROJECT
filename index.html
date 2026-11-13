@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A complete Class 12 Science Exhibition project: Super Smart Dustbin by Aman Bauddha.">
+<title>Super Smart Dustbin | Aman Bauddha</title>
+<style>
+:root{--navy:#071b33;--blue:#0d3154;--green:#20c982;--mint:#b8f3d6;--ink:#14283b;--muted:#617487;--paper:#f4f8fb;--white:#fff;--line:#dce7ee;--yellow:#ffd166}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+a{color:#087c58}a:hover{color:#05a36d}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(7,27,51,.96);backdrop-filter:blur(12px);color:white;border-bottom:1px solid #24445f}
+.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:.08em;color:var(--mint);text-decoration:none}.navlinks{display:flex;gap:17px;align-items:center;flex-wrap:wrap}.navlinks a{color:#e5f3f8;text-decoration:none;font-size:.88rem}.navlinks a:hover{color:var(--mint)}.menu{display:none;background:none;color:white;border:1px solid #547087;border-radius:9px;padding:7px 11px}
+.hero{background:radial-gradient(circle at 80% 20%,#1b775f 0,#0d3154 34%,#071b33 76%);color:white;padding:76px 0 68px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}.eyebrow{color:var(--mint);font-weight:800;letter-spacing:.18em;font-size:.82rem;text-transform:uppercase}.hero h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.03;margin:12px 0 18px;letter-spacing:-.04em}.hero h1 span{color:var(--green)}.hero p{font-size:1.12rem;color:#d5e7f1;max-width:620px}.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:12px 19px;font-weight:800;text-decoration:none;cursor:pointer;background:var(--green);color:#062a22;margin:9px 8px 0 0}.btn.alt{background:transparent;color:white;border:1px solid #8ab5c7}.hero-visual{min-height:350px;display:grid;place-items:center;position:relative}.dustbin{width:230px;height:245px;position:relative;filter:drop-shadow(0 25px 28px #00111d88)}.lid{position:absolute;top:5px;left:0;width:230px;height:33px;border-radius:15px 15px 7px 7px;background:linear-gradient(90deg,#16a66e,#4be1a0);transform:rotate(-7deg);transform-origin:left bottom}.bodybin{position:absolute;top:35px;left:19px;width:192px;height:190px;border-radius:13px 13px 34px 34px;background:linear-gradient(90deg,#0e8b69,#20c982 48%,#08795e);clip-path:polygon(0 0,100% 0,88% 100%,12% 100%)}.bodybin:before{content:"";position:absolute;left:20px;top:24px;width:152px;height:4px;background:#b8f3d688;box-shadow:0 28px #b8f3d655,0 56px #b8f3d655,0 84px #b8f3d655}.sensor{position:absolute;top:88px;left:89px;width:52px;height:24px;border-radius:20px;background:#092d45;border:3px solid #a9f4d2}.sensor:before,.sensor:after{content:"";position:absolute;top:5px;width:9px;height:9px;border-radius:50%;background:#b8f3d6}.sensor:before{left:7px}.sensor:after{right:7px}.screen{position:absolute;top:133px;left:75px;background:#071b33;color:#71ffb6;border:3px solid #a8e9ce;border-radius:5px;padding:5px 10px;font:700 12px monospace}.glow{position:absolute;width:310px;height:310px;border:1px solid #69e5b355;border-radius:50%;box-shadow:0 0 70px #2de19b22,inset 0 0 70px #2de19b18}.float{position:absolute;background:#ffffff12;border:1px solid #ffffff30;border-radius:13px;padding:9px 13px;color:#eafff5;font-size:.8rem;backdrop-filter:blur(8px)}.f1{top:32px;right:0}.f2{bottom:35px;left:0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-26px;position:relative}.stat{background:white;border:1px solid var(--line);border-radius:16px;padding:18px;text-align:center;box-shadow:0 12px 30px #09253b0b}.stat b{display:block;font-size:1.45rem;color:#07865d}.stat small{color:var(--muted)}
+section{padding:68px 0}.section-head{max-width:760px;margin-bottom:28px}.kicker{color:#079567;text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:900}.section-head h2{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15;margin:7px 0 10px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:21px;box-shadow:0 8px 24px #0b2b4408}.card h3{margin:5px 0 8px;color:var(--navy)}.icon{font-size:1.65rem}.card p,.card li{color:var(--muted)}.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}.highlight{background:linear-gradient(135deg,#082440,#0e5a4b);color:white;border-radius:20px;padding:27px}.highlight h3{color:var(--mint)}.highlight p{color:#d4e9e2}
+table{width:100%;border-collapse:collapse;background:white;border-radius:14px;overflow:hidden;border:1px solid var(--line)}th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}th{background:#0c3152;color:white}tr:last-child td{border-bottom:0}.price{font-weight:800;color:#07865d}.note{padding:13px 16px;border-left:4px solid var(--green);background:#e9f8f1;border-radius:8px;color:#315b4d;margin:17px 0}
+.diagram{background:white;border:1px solid var(--line);border-radius:16px;padding:15px;overflow:auto}.diagram svg{width:100%;min-width:620px;height:auto}.codebox{background:#06182a;color:#d9f8e9;border-radius:16px;overflow:hidden;border:1px solid #173e59}.codehead{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#0c2c48;color:#b9f3d6}.copy{background:var(--green);border:0;border-radius:8px;padding:8px 13px;font-weight:800;cursor:pointer}pre{margin:0;padding:18px;overflow:auto;font:13px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;max-height:620px}
+.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.video{display:flex;gap:14px;align-items:flex-start;background:white;border:1px solid var(--line);border-radius:14px;padding:16px;text-decoration:none;color:var(--ink)}.play{flex:0 0 48px;height:48px;border-radius:13px;background:#e8f8f1;display:grid;place-items:center;font-size:1.4rem}.video strong{display:block;color:var(--navy)}.video small{color:var(--muted)}
+.supplier{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}.supplier:last-child{border:0}.unverified{font-size:.76rem;color:#8b6410;background:#fff4d4;padding:4px 8px;border-radius:20px;white-space:nowrap;height:max-content}
+details{background:white;border:1px solid var(--line);border-radius:12px;padding:14px 17px;margin:10px 0}summary{font-weight:800;cursor:pointer;color:var(--navy)}details p{color:var(--muted)}
+.script{font-size:1.02rem;line-height:1.9}.footer{background:#06182a;color:#d6e6ef;padding:35px 0}.footer a{color:var(--mint)}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.toplink{position:fixed;right:18px;bottom:18px;background:var(--green);color:#062a22;text-decoration:none;font-weight:900;padding:10px 14px;border-radius:50px;box-shadow:0 6px 20px #0002}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.hero-visual{min-height:300px}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:#071b33;padding:16px 4%;flex-direction:column;align-items:flex-start}.navlinks.show{display:flex}.menu{display:block}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.hero{padding:55px 0 52px}.grid,.two,.video-grid{grid-template-columns:1fr}.stats{gap:9px}.stat{padding:13px}.stat b{font-size:1.2rem}section{padding:52px 0}th,td{padding:10px;font-size:.9rem}.hero-visual{transform:scale(.9)}}
+
+/* Ashoka-inspired national-symbol corner ornaments */
+.hero{position:relative}
+.heritage-mark{position:absolute;top:18px;z-index:2;width:clamp(76px,10vw,128px);height:clamp(76px,10vw,128px);display:grid;place-items:center;filter:drop-shadow(0 0 12px #ffd16688);opacity:.96;pointer-events:none}
+.heritage-mark.left{left:clamp(12px,2.5vw,34px)}
+.heritage-mark.right{right:clamp(12px,2.5vw,34px)}
+.heritage-mark svg{width:100%;height:100%;overflow:visible}
+.heritage-mark .gold{stroke:#ffd166;fill:none;stroke-width:3}
+.heritage-mark .blue{stroke:#79c9ff;fill:none;stroke-width:3}
+.heritage-mark .lion-fill{fill:#ffd166;stroke:#fff0bd;stroke-width:1.3}
+.heritage-mark .lion-line{stroke:#79521b;stroke-width:2;fill:none;stroke-linecap:round}
+@media(max-width:700px){
+ .heritage-mark{top:10px;width:66px;height:66px;opacity:.82}
+ .heritage-mark.left{left:8px}.heritage-mark.right{right:8px}
+ .hero{padding-top:104px}
+ .hero-grid{gap:22px}
+}
+
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#home">AMAN BAUDDHA</a><button class="menu" id="menuBtn" aria-label="Open navigation">☰ MENU</button><nav class="navlinks" id="navlinks"><a href="#about">About</a><a href="#features">Features</a><a href="#components">Components</a><a href="#circuit">Circuit</a><a href="#code">Arduino Code</a><a href="#videos">Videos</a><a href="#budget">Budget</a><a href="#viva">Viva</a></nav></div></header>
+<main id="home">
+<div class="hero">
+<div class="heritage-mark left" aria-label="Ashoka Chakra decorative emblem">
+<svg viewBox="0 0 120 120" role="img" aria-hidden="true">
+ <circle class="blue" cx="60" cy="60" r="49"/>
+ <circle class="blue" cx="60" cy="60" r="7"/>
+ <line class="blue" x1="68.00" y1="60.00" x2="106.00" y2="60.00"/>
+ <line class="blue" x1="67.73" y1="62.07" x2="104.43" y2="71.91"/>
+ <line class="blue" x1="66.93" y1="64.00" x2="99.84" y2="83.00"/>
+ <line class="blue" x1="65.66" y1="65.66" x2="92.53" y2="92.53"/>
+ <line class="blue" x1="64.00" y1="66.93" x2="83.00" y2="99.84"/>
+ <line class="blue" x1="62.07" y1="67.73" x2="71.91" y2="104.43"/>
+ <line class="blue" x1="60.00" y1="68.00" x2="60.00" y2="106.00"/>
+ <line class="blue" x1="57.93" y1="67.73" x2="48.09" y2="104.43"/>
+ <line class="blue" x1="56.00" y1="66.93" x2="37.00" y2="99.84"/>
+ <line class="blue" x1="54.34" y1="65.66" x2="27.47" y2="92.53"/>
+ <line class="blue" x1="53.07" y1="64.00" x2="20.16" y2="83.00"/>
+ <line class="blue" x1="52.27" y1="62.07" x2="15.57" y2="71.91"/>
+ <line class="blue" x1="52.00" y1="60.00" x2="14.00" y2="60.00"/>
+ <line class="blue" x1="52.27" y1="57.93" x2="15.57" y2="48.09"/>
+ <line class="blue" x1="53.07" y1="56.00" x2="20.16" y2="37.00"/>
+ <line class="blue" x1="54.34" y1="54.34" x2="27.47" y2="27.47"/>
+ <line class="blue" x1="56.00" y1="53.07" x2="37.00" y2="20.16"/>
+ <line class="blue" x1="57.93" y1="52.27" x2="48.09" y2="15.57"/>
+ <line class="blue" x1="60.00" y1="52.00" x2="60.00" y2="14.00"/>
+ <line class="blue" x1="62.07" y1="52.27" x2="71.91" y2="15.57"/>
+ <line class="blue" x1="64.00" y1="53.07" x2="83.00" y2="20.16"/>
+ <line class="blue" x1="65.66" y1="54.34" x2="92.53" y2="27.47"/>
+ <line class="blue" x1="66.93" y1="56.00" x2="99.84" y2="37.00"/>
+ <line class="blue" x1="67.73" y1="57.93" x2="104.43" y2="48.09"/>
+</svg></div>
+<div class="heritage-mark right" aria-label="Four-lion Ashoka pillar capital decorative emblem">
+<svg viewBox="0 0 120 120" role="img" aria-hidden="true">
+ <!-- stylized four-lion capital: three lions visible, fourth implied behind -->
+ <path class="gold" d="M20 79 Q60 91 100 79 L94 90 Q60 101 26 90 Z"/>
+ <path class="gold" d="M29 95 H91 M35 101 H85"/>
+ <g class="lion-fill">
+  <circle cx="60" cy="28" r="15"/><circle cx="37" cy="39" r="13"/><circle cx="83" cy="39" r="13"/>
+  <path d="M48 43 Q60 34 72 43 L76 73 Q60 81 44 73 Z"/>
+  <path d="M25 54 Q37 47 49 55 L53 77 Q38 83 27 74 Z"/>
+  <path d="M71 55 Q83 47 95 54 L93 74 Q82 83 67 77 Z"/>
+ </g>
+ <g class="lion-line">
+  <path d="M53 26 Q60 19 67 26 M56 32 H64 M32 38 Q37 31 42 38 M78 38 Q83 31 88 38"/>
+  <path d="M55 48 L60 54 L65 48 M31 60 L38 65 L44 60 M76 60 L83 65 L89 60"/>
+  <path d="M51 72 L60 76 L69 72"/>
+ </g>
+ <path class="gold" d="M43 82 Q60 76 77 82 L73 91 H47 Z"/>
+ <circle cx="60" cy="86" r="3" fill="#ffd166"/>
+</svg></div>
+<div class="wrap hero-grid"><div><div class="eyebrow">Class 12 Science Exhibition · Working Model</div><h1>WELCOME TO<br>OUR <span>WEBSITE</span></h1><p>Here are all the information about our Smart Dustbin Model — its working, components, circuit connections, Arduino program, tutorials and future scope.</p><a class="btn" href="#about">Explore Project ↓</a><a class="btn alt" href="#videos">Watch Tutorials ▶</a><p style="font-size:.85rem;margin-top:25px;color:#b8d5e3">Presented by <strong style="color:#b8f3d6">AMAN BAUDDHA</strong></p></div>
+<div class="hero-visual" aria-label="Illustration of an automatic smart dustbin"><div class="glow"></div><div class="dustbin"><div class="lid"></div><div class="bodybin"></div><div class="sensor"></div><div class="screen">80% FULL</div></div><div class="float f1">📡 Ultrasonic sensing</div><div class="float f2">♻️ Smart waste management</div></div></div></div>
+<div class="wrap stats"><div class="stat"><b>60 cm</b><small>Model height</small></div><div class="stat"><b>2 Sensors</b><small>Hand + waste level</small></div><div class="stat"><b>80%</b><small>Full-bin alert</small></div><div class="stat"><b>₹1,200–1,700</b><small>Estimated budget</small></div></div>
+<section id="about"><div class="wrap"><div class="section-head"><div class="kicker">01 · Project overview</div><h2>About the Super Smart Dustbin</h2><p>The Super Smart Dustbin is an automated waste-management model designed to improve cleanliness and hygiene. It opens its lid without physical contact, monitors the waste level and alerts users when the bin is nearly full.</p></div><div class="two"><div class="card"><h3>Project details</h3><p><b>Project type:</b> Working Model<br><b>Class:</b> 12 Science Exhibition<br><b>Model height:</b> 2 feet (approximately 60 cm)<br><b>Technology:</b> Arduino, ultrasonic sensors, servo motor and LCD<br><b>Estimated budget:</b> ₹1,000–₹2,000</p></div><div class="highlight"><h3>Our message</h3><p style="font-size:1.3rem;font-weight:800">Smart Technology for a Cleaner and Healthier Future.</p><p>By combining sensors and automation, this model demonstrates how simple electronics can solve everyday cleanliness problems.</p></div></div></div></section>
+<section id="features" style="background:#eaf2f6"><div class="wrap"><div class="section-head"><div class="kicker">02 · Key functions</div><h2>Main Features</h2></div><div class="grid"><div class="card"><div class="icon">🖐️</div><h3>Automatic Touchless Lid</h3><p>The lid opens when a hand is detected near the sensor.</p></div><div class="card"><div class="icon">📏</div><h3>Waste Level Monitoring</h3><p>A second ultrasonic sensor measures the distance to the garbage surface.</p></div><div class="card"><div class="icon">📟</div><h3>16×2 LCD Display</h3><p>Shows the approximate waste percentage and system status.</p></div><div class="card"><div class="icon">🔔</div><h3>80% Full Alert</h3><p>A buzzer alerts users when the bin reaches 80% capacity.</p></div><div class="card"><div class="icon">🚦</div><h3>LED Indicators</h3><p>Green indicates normal capacity; red indicates the bin is nearly full.</p></div><div class="card"><div class="icon">🤖</div><h3>Arduino Automation</h3><p>The Arduino reads sensors and controls the servo, display and alerts.</p></div></div></div></section>
+<section id="working"><div class="wrap"><div class="section-head"><div class="kicker">03 · How it works</div><h2>Working Principle</h2><p>Two HC-SR04 ultrasonic sensors perform different jobs. The Arduino processes their readings and controls the output devices.</p></div><div class="two"><div class="card"><h3>Sensor 1 — Hand Detection</h3><p>Mounted near the front/top. It detects a hand within the selected range and signals the Arduino to open the lid using the servo motor.</p></div><div class="card"><h3>Sensor 2 — Waste Level Detection</h3><p>Mounted under the lid and facing downward. It measures the distance from the sensor to the waste surface. A shorter distance means the bin is fuller.</p></div></div><div class="note"><b>Percentage calculation:</b> Fill % = ((Empty-bin distance − Measured distance) ÷ (Empty-bin distance − Full-bin distance)) × 100. Calibrate the empty and full distances for your actual bin.</div><div class="card"><h3>System sequence</h3><p>Hand detected → Arduino commands servo → Lid opens → Hand moves away → Lid closes. At the same time, waste sensor measures fill level → LCD updates → At 80% or more, buzzer and red LED turn on.</p></div></div></section>
+<section id="components" style="background:#eaf2f6"><div class="wrap"><div class="section-head"><div class="kicker">04 · Materials</div><h2>Components Required</h2></div><div style="overflow-x:auto"><table><thead><tr><th>Component</th><th>Quantity</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>Arduino UNO R3</td><td>1</td><td>Main controller</td></tr><tr><td>HC-SR04 Ultrasonic Sensor</td><td>2</td><td>Hand and waste detection</td></tr><tr><td>SG90 Servo Motor</td><td>1</td><td>Opens and closes lid</td></tr><tr><td>16×2 LCD with I2C</td><td>1</td><td>Displays fill percentage</td></tr><tr><td>Active Buzzer</td><td>1</td><td>80% full alert</td></tr><tr><td>Red LED + Green LED</td><td>1 each</td><td>Status indication</td></tr><tr><td>220Ω Resistors</td><td>2</td><td>LED current limiting</td></tr><tr><td>Breadboard and jumper wires</td><td>1 set</td><td>Prototyping and wiring</td></tr><tr><td>5V 2A adapter / regulated supply</td><td>1</td><td>Power source</td></tr><tr><td>470µF capacitor</td><td>1</td><td>Helps smooth servo supply dips</td></tr><tr><td>Plastic dustbin with lid</td><td>1</td><td>Outer structure</td></tr><tr><td>Cardboard / foam board</td><td>As required</td><td>Mounts and decoration</td></tr></tbody></table></div></div></section>
+<section id="circuit"><div class="wrap"><div class="section-head"><div class="kicker">05 · Wiring guide</div><h2>Circuit Connections</h2><p>Use this pin map while wiring the components. The diagram is a simplified connection guide, not a physical-layout drawing.</p></div><div class="diagram"><svg viewBox="0 0 900 480" role="img" aria-label="Simplified Arduino smart dustbin wiring block diagram"><defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="#20a878"/></marker></defs><rect x="340" y="150" width="220" height="180" rx="18" fill="#0d3154"/><text x="450" y="220" fill="white" font-size="25" text-anchor="middle" font-weight="bold">ARDUINO</text><text x="450" y="252" fill="#b8f3d6" font-size="18" text-anchor="middle">UNO R3</text><text x="450" y="285" fill="white" font-size="13" text-anchor="middle">Controller</text>
+<g fill="#e9f8f1" stroke="#20a878" stroke-width="2"><rect x="25" y="45" width="210" height="90" rx="12"/><rect x="25" y="340" width="210" height="90" rx="12"/><rect x="665" y="45" width="210" height="90" rx="12"/><rect x="665" y="190" width="210" height="90" rx="12"/><rect x="665" y="340" width="210" height="90" rx="12"/></g>
+<g fill="#0d3154" font-size="17" text-anchor="middle" font-weight="bold"><text x="130" y="82">HAND SENSOR</text><text x="130" y="108" font-size="13">TRIG D2 · ECHO D3</text><text x="130" y="377">WASTE SENSOR</text><text x="130" y="403" font-size="13">TRIG D4 · ECHO D5</text><text x="770" y="82">SERVO MOTOR</text><text x="770" y="108" font-size="13">Signal D6</text><text x="770" y="227">BUZZER + LEDs</text><text x="770" y="253" font-size="13">D7 · D8 · D9</text><text x="770" y="377">I2C LCD 16×2</text><text x="770" y="403" font-size="13">SDA A4 · SCL A5</text></g>
+<g stroke="#20a878" stroke-width="3" fill="none" marker-end="url(#arr)"><path d="M235 90 H290 V190 H340"/><path d="M235 385 H290 V290 H340"/><path d="M560 190 H615 V90 H665"/><path d="M560 240 H665"/><path d="M560 290 H615 V385 H665"/></g><text x="450" y="465" text-anchor="middle" font-size="13" fill="#536b7d">All modules share GND. Servo uses a separate regulated 5V supply.</text></svg></div><div class="two" style="margin-top:18px"><div class="card"><h3>Pin connections</h3><table><tbody><tr><td>Hand TRIG / ECHO</td><td>D2 / D3</td></tr><tr><td>Waste TRIG / ECHO</td><td>D4 / D5</td></tr><tr><td>Servo signal</td><td>D6</td></tr><tr><td>Buzzer +</td><td>D7</td></tr><tr><td>Green / Red LED</td><td>D8 / D9</td></tr><tr><td>LCD SDA / SCL</td><td>A4 / A5</td></tr><tr><td>LCD VCC / GND</td><td>5V / GND</td></tr></tbody></table></div><div class="card"><h3>Important power safety</h3><ul><li>Power the servo from a separate regulated 5V supply rated for its current.</li><li>Connect the external supply GND to Arduino GND (common ground).</li><li>Do not power a servo from the Arduino 5V pin if it causes resets or voltage drops.</li><li>Place the 470µF capacitor across servo supply +5V and GND, observing polarity.</li><li>Check wiring before switching on power.</li></ul></div></div></div></section>
+<section id="construction" style="background:#eaf2f6"><div class="wrap"><div class="section-head"><div class="kicker">06 · Model making</div><h2>Physical Construction</h2><p>Recommended model dimensions: approximately 60 cm high, 30–35 cm wide and 30–35 cm deep.</p></div><div class="grid"><div class="card"><h3>Front section</h3><p>LCD display, hand-detection sensor, red and green LEDs, and buzzer.</p></div><div class="card"><h3>Top section</h3><p>Hinged automatic lid, servo motor and linkage mechanism.</p></div><div class="card"><h3>Inside section</h3><p>Waste-level sensor facing downward, Arduino controller and protected wiring/power supply.</p></div></div></div></section>
+<section id="code"><div class="wrap"><div class="section-head"><div class="kicker">07 · Programming</div><h2>Arduino Source Code</h2><p>Upload this sketch using the Arduino IDE. Install the <b>Servo</b> and <b>LiquidCrystal_I2C</b> libraries. If your LCD backpack uses a different I2C address, change 0x27 to 0x3F (or scan for its address).</p></div><div class="codebox"><div class="codehead"><strong>super_smart_dustbin.ino</strong><button class="copy" id="copyCode">Copy Code</button></div><pre><code id="arduinoCode">#include &lt;Servo.h&gt;
+#include &lt;Wire.h&gt;
+#include &lt;LiquidCrystal_I2C.h&gt;
+
+// Change 0x27 to 0x3F if required by your LCD module.
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+Servo lidServo;
+
+// Pin connections
+const byte HAND_TRIG = 2;
+const byte HAND_ECHO = 3;
+const byte WASTE_TRIG = 4;
+const byte WASTE_ECHO = 5;
+const byte SERVO_PIN = 6;
+const byte BUZZER_PIN = 7;
+const byte GREEN_LED = 8;
+const byte RED_LED = 9;
+
+// Calibrate these distances for your dustbin (in centimetres).
+const float EMPTY_DISTANCE_CM = 30.0; // sensor-to-bottom when empty
+const float FULL_DISTANCE_CM  = 5.0;  // sensor-to-waste when full
+const int ALERT_LEVEL = 80;
+const int HAND_RANGE_CM = 20;
+const int OPEN_ANGLE = 95;
+const int CLOSED_ANGLE = 5;
+
+unsigned long lidOpenedAt = 0;
+bool lidIsOpen = false;
+unsigned long lastWasteRead = 0;
+int fillPercent = 0;
+
+float readDistance(byte trigPin, byte echoPin) {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(3);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  // Timeout avoids waiting too long when no echo is received.
+  unsigned long duration = pulseIn(echoPin, HIGH, 30000UL);
+  if (duration == 0) return -1; // invalid reading
+  return duration * 0.0343 / 2.0;
+}
+
+int calculateFill(float distanceCm) {
+  if (distanceCm < 0) return -1;
+  float percent = (EMPTY_DISTANCE_CM - distanceCm) *
+                  100.0 / (EMPTY_DISTANCE_CM - FULL_DISTANCE_CM);
+  return constrain((int)(percent + 0.5), 0, 100);
+}
+
+void updateWasteStatus() {
+  float distance = readDistance(WASTE_TRIG, WASTE_ECHO);
+  int measured = calculateFill(distance);
+
+  if (measured >= 0) fillPercent = measured;
+
+  bool isFull = fillPercent >= ALERT_LEVEL;
+  digitalWrite(RED_LED, isFull ? HIGH : LOW);
+  digitalWrite(GREEN_LED, isFull ? LOW : HIGH);
+  digitalWrite(BUZZER_PIN, isFull ? HIGH : LOW);
+
+  lcd.setCursor(0, 0);
+  lcd.print("Waste Level:    ");
+  lcd.setCursor(0, 1);
+  if (measured < 0) {
+    lcd.print("Sensor Error    ");
+  } else {
+    lcd.print(fillPercent);
+    lcd.print("% ");
+    lcd.print(isFull ? "BIN FULL! " : "Normal    ");
+  }
+}
+
+void setup() {
+  pinMode(HAND_TRIG, OUTPUT);
+  pinMode(HAND_ECHO, INPUT);
+  pinMode(WASTE_TRIG, OUTPUT);
+  pinMode(WASTE_ECHO, INPUT);
+  pinMode(BUZZER_PIN, OUTPUT);
+  pinMode(GREEN_LED, OUTPUT);
+  pinMode(RED_LED, OUTPUT);
+
+  digitalWrite(BUZZER_PIN, LOW);
+  lidServo.attach(SERVO_PIN);
+  lidServo.write(CLOSED_ANGLE);
+
+  lcd.init();
+  lcd.backlight();
+  lcd.setCursor(0, 0);
+  lcd.print("SMART DUSTBIN");
+  lcd.setCursor(0, 1);
+  lcd.print("By Aman Bauddha");
+  delay(1800);
+  lcd.clear();
+}
+
+void loop() {
+  // Read the hand sensor and open lid when a hand is nearby.
+  float handDistance = readDistance(HAND_TRIG, HAND_ECHO);
+  if (handDistance > 0 && handDistance <= HAND_RANGE_CM) {
+    lidServo.write(OPEN_ANGLE);
+    lidOpenedAt = millis();
+    lidIsOpen = true;
+  }
+
+  // Close lid 2 seconds after the last hand detection.
+  if (lidIsOpen && millis() - lidOpenedAt >= 2000UL) {
+    lidServo.write(CLOSED_ANGLE);
+    lidIsOpen = false;
+  }
+
+  // Update waste level about twice per second.
+  if (millis() - lastWasteRead >= 500UL) {
+    lastWasteRead = millis();
+    updateWasteStatus();
+  }
+
+  delay(60);
+}</code></pre></div><div class="note"><b>Calibration:</b> Measure the sensor-to-bottom distance with the bin empty and the sensor-to-waste distance at the level you consider full. Update EMPTY_DISTANCE_CM and FULL_DISTANCE_CM. Test the servo angles with the lid disconnected first. A continuous buzzer at 80% is used in this basic example; add timed beeping if preferred.</div></div></section>
+<section id="budget" style="background:#eaf2f6"><div class="wrap"><div class="section-head"><div class="kicker">08 · Cost estimate</div><h2>Estimated Budget</h2><p>Approximate local-market prices; actual rates vary by component quality and seller.</p></div><table><thead><tr><th>Item group</th><th>Estimated cost</th></tr></thead><tbody><tr><td>Arduino UNO compatible board</td><td>₹300–₹450</td></tr><tr><td>2 × HC-SR04 sensors</td><td>₹120–₹200</td></tr><tr><td>SG90 servo motor</td><td>₹100–₹180</td></tr><tr><td>16×2 I2C LCD</td><td>₹150–₹250</td></tr><tr><td>Buzzer, LEDs and resistors</td><td>₹40–₹80</td></tr><tr><td>Breadboard, wires and capacitor</td><td>₹100–₹180</td></tr><tr><td>Power supply and dustbin / craft material</td><td>₹250–₹400</td></tr><tr><td><b>Estimated total</b></td><td class="price">₹1,060–₹1,740</td></tr></tbody></table></div></section>
+<section id="videos"><div class="wrap"><div class="section-head"><div class="kicker">09 · Learn by watching</div><h2>YouTube Video Tutorials</h2><p>Tap any video to open it on YouTube. These selected references cover automatic lid construction, sensor connections and the complete smart-dustbin concept. Search links open YouTube results so you can explore more available videos.</p></div><div class="video-grid">
+<a class="video" href="https://www.youtube.com/watch?v=meIDucxU-k8" target="_blank" rel="noopener"><span class="play">▶</span><span><strong>Smart Dustbin — Original Video Reference</strong><small>Video link supplied for this project</small></span></a>
+<a class="video" href="https://www.youtube.com/watch?v=WYh-zzkzRT8" target="_blank" rel="noopener"><span class="play">▶</span><span><strong>Automatic Smart Dustbin with Arduino</strong><small>Arduino UNO, HC-SR04 and servo motor · MW Electronics Lab</small></span></a>
+<a class="video" href="https://www.youtube.com/watch?v=a9rhFC6TWpU" target="_blank" rel="noopener"><span class="play">▶</span><span><strong>Arduino UNO Smart Dustbin DIY Project</strong><small>Assembly, circuit connections and programming</small></span></a>
+<a class="video" href="https://www.youtube.com/watch?v=7UStiMiKlTI" target="_blank" rel="noopener"><span class="play">▶</span><span><strong>Automatic Dustbin Circuit Demonstration</strong><small>Arduino and ultrasonic sensor model</small></span></a>
+<a class="video" href="https://www.youtube.com/watch?v=RHW-2JDuq90" target="_blank" rel="noopener"><span class="play">▶</span><span><strong>Smart Dustbin Output Video</strong><small>Automatic lid using Arduino</small></span></a>
+<a class="video" href="https://www.youtube.com/results?search_query=Arduino+smart+dustbin+waste+level+monitoring+LCD+buzzer" target="_blank" rel="noopener"><span class="play">🔎</span><span><strong>Waste-Level Monitoring + LCD + Buzzer</strong><small>Open all matching YouTube search results</small></span></a>
+<a class="video" href="https://www.youtube.com/results?search_query=HC-SR04+ultrasonic+sensor+Arduino+connection+tutorial" target="_blank" rel="noopener"><span class="play">🔎</span><span><strong>Ultrasonic Sensor Connection Tutorials</strong><small>Explore more sensor wiring videos</small></span></a>
+<a class="video" href="https://www.youtube.com/results?search_query=SG90+servo+motor+Arduino+lid+mechanism" target="_blank" rel="noopener"><span class="play">🔎</span><span><strong>Servo Motor Lid Mechanism</strong><small>Explore servo mounting and control videos</small></span></a>
+<a class="video" href="https://www.youtube.com/results?search_query=16x2+I2C+LCD+Arduino+tutorial" target="_blank" rel="noopener"><span class="play">🔎</span><span><strong>16×2 I2C LCD Connections</strong><small>Explore LCD wiring and code tutorials</small></span></a>
+<a class="video" href="https://www.youtube.com/results?search_query=complete+Arduino+automatic+smart+dustbin+project" target="_blank" rel="noopener"><span class="play">🔎</span><span><strong>More Complete Smart Dustbin Projects</strong><small>Browse currently available YouTube videos</small></span></a>
+</div><p class="note">YouTube search links show videos currently available on YouTube; results may change by region and over time. Individual videos are hosted by their respective creators.</p></div></section>
+<section id="suppliers" style="background:#eaf2f6"><div class="wrap"><div class="section-head"><div class="kicker">10 · Buying components</div><h2>Local Supplier Directory</h2><p>Potential shops to contact for Arduino boards, ultrasonic sensors, servo motors, LCD displays and wiring accessories.</p></div><div class="two"><div class="card"><h3>Kusmara</h3><div class="supplier"><b>New Pal Electronics and Electrical</b><span class="unverified">Verify stock</span></div><div class="supplier"><b>Dayal Vidya Electronics and Electricals</b><span class="unverified">Verify stock</span></div><div class="supplier"><b>Maa Vaishno Electronics</b><span class="unverified">Verify stock</span></div><div class="supplier"><b>Pawan Electronic Shop</b><span class="unverified">Verify stock</span></div><div class="supplier"><b>Maa Pitambra</b><span class="unverified">Verify stock</span></div></div><div class="card"><h3>Mainpuri</h3><div class="supplier"><b>Priya Electronics</b><span class="unverified">Verify stock</span></div><div class="supplier"><b>Shiv Electronics</b><span class="unverified">Verify stock</span></div><div class="supplier"><b>Surbhi Electronic &amp; Electrical Shop</b><span class="unverified">Verify stock</span></div><p style="font-size:.9rem">Please call or visit to confirm shop details and current component availability before travelling. These suppliers have not been independently verified for current stock.</p></div></div></div></section>
+<section id="advantages"><div class="wrap"><div class="section-head"><div class="kicker">11 · Benefits</div><h2>Advantages</h2></div><div class="grid"><div class="card">✓ Reduces physical contact with the dustbin.</div><div class="card">✓ Promotes better hygiene.</div><div class="card">✓ Helps monitor garbage levels.</div><div class="card">✓ Alerts users when the bin is nearly full.</div><div class="card">✓ Encourages smart waste management.</div><div class="card">✓ Demonstrates practical electronics and automation.</div></div></div></section>
+<section id="future" style="background:#eaf2f6"><div class="wrap"><div class="section-head"><div class="kicker">12 · What's next?</div><h2>Future Scope</h2></div><div class="grid"><div class="card">☀️ Solar-powered operation</div><div class="card">🌐 IoT-based waste monitoring</div><div class="card">📱 Mobile application notifications</div><div class="card">🚛 Automatic collection alerts</div><div class="card">♻️ Smart waste segregation</div><div class="card">📍 GPS-enabled municipal waste management</div></div></div></section>
+<section id="presentation"><div class="wrap"><div class="section-head"><div class="kicker">13 · Exhibition speech</div><h2>Science Exhibition Presentation</h2></div><div class="card script"><p><b>Good morning respected judges and teachers.</b></p><p>Today, I am presenting my project, <b>Super Smart Dustbin</b>.</p><p>The main objective of this project is to promote hygiene and improve waste management through automation.</p><p>This model uses an Arduino microcontroller, ultrasonic sensors, a servo motor and an LCD display.</p><p>When someone brings their hand near the dustbin, the ultrasonic sensor detects it and sends a signal to the Arduino. The Arduino activates the servo motor, which automatically opens the lid.</p><p>Another ultrasonic sensor monitors the garbage level inside the dustbin.</p><p>When the bin reaches 80% capacity, the system activates a buzzer and displays a warning on the LCD screen.</p><p>This project demonstrates how technology can make waste management smarter, cleaner and more efficient.</p><p><b>Our message is simple: Smart Technology for a Cleaner and Healthier Future.</b></p><p>Thank you!</p><p style="color:#07865d"><b>Presented by: Aman Bauddha</b></p></div></div></section>
+<section id="viva" style="background:#eaf2f6"><div class="wrap"><div class="section-head"><div class="kicker">14 · Judge's questions</div><h2>Frequently Asked Questions (Viva)</h2></div>
+<details><summary>Q1. What is Arduino?</summary><p>Arduino is a programmable microcontroller development board used to control electronic components.</p></details>
+<details><summary>Q2. What is an ultrasonic sensor?</summary><p>It measures distance using high-frequency sound waves and the time taken for the echo to return.</p></details>
+<details><summary>Q3. Why are two ultrasonic sensors used?</summary><p>One detects a nearby hand; the other measures the waste level inside the bin.</p></details>
+<details><summary>Q4. What is the function of the servo motor?</summary><p>It moves the lid to open and close it automatically.</p></details>
+<details><summary>Q5. Why is an LCD display used?</summary><p>It displays the current approximate waste level and system status.</p></details>
+<details><summary>Q6. What happens when the dustbin becomes 80% full?</summary><p>The buzzer sounds, the red LED turns on and the LCD displays a full-bin warning.</p></details>
+<details><summary>Q7. Where can this technology be used?</summary><p>Homes, schools, hospitals, offices, shopping centres and public places.</p></details>
+<details><summary>Q8. How is the waste percentage calculated?</summary><p>The Arduino maps the measured sensor distance between calibrated empty and full distances to a percentage from 0% to 100%.</p></details>
+<details><summary>Q9. Why does the servo need a separate power supply?</summary><p>A servo can draw more current than the Arduino board can safely provide. A separate regulated supply helps prevent voltage drops and resets. Both grounds must be connected together.</p></details>
+<details><summary>Q10. What is the limitation of this model?</summary><p>Ultrasonic readings can vary with irregular waste surfaces, soft materials or sensor placement. Calibration and careful mounting improve reliability.</p></details></div></section>
+<section id="references"><div class="wrap"><div class="section-head"><div class="kicker">15 · Further learning</div><h2>References &amp; Useful Resources</h2></div><div class="card"><ul><li><a href="https://docs.arduino.cc/" target="_blank" rel="noopener">Arduino Official Documentation</a> — board and programming guides.</li><li><a href="https://projecthub.arduino.cc/" target="_blank" rel="noopener">Arduino Project Hub</a> — community project examples.</li><li><a href="https://www.youtube.com/results?search_query=Arduino+smart+dustbin+project" target="_blank" rel="noopener">YouTube: Arduino Smart Dustbin Projects</a> — browse additional tutorials.</li><li><a href="https://www.youtube.com/results?search_query=HC-SR04+ultrasonic+sensor+Arduino" target="_blank" rel="noopener">YouTube: HC-SR04 Sensor Tutorials</a>.</li></ul></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-row"><div><b style="color:#b8f3d6;letter-spacing:.12em">AMAN BAUDDHA</b><br>Super Smart Dustbin — Class 12 Science Exhibition</div><div>Smart Technology for a Cleaner and Healthier Future.<br><a href="#home">Back to top ↑</a></div></div></footer>
+<a class="toplink" href="#home" aria-label="Back to top">↑ Top</a>
+<script>
+const menuBtn=document.getElementById('menuBtn'), nav=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>nav.classList.toggle('show'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('show')));
+document.getElementById('copyCode').addEventListener('click',async()=>{
+ const code=document.getElementById('arduinoCode').innerText;
+ const btn=document.getElementById('copyCode');
+ try{await navigator.clipboard.writeText(code);btn.textContent='Copied!';}
+ catch(e){const r=document.createRange();r.selectNodeContents(document.getElementById('arduinoCode'));const s=window.getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Select and copy';}
+ setTimeout(()=>btn.textContent='Copy Code',1800);
+});
+</script>
+</body></html>
